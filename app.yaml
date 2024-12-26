@@ -1,10 +1,11 @@
+#For test deploy on GAE(Google App Engine)
 runtime: python3.13  # or the Python version you're using
 
 entrypoint: gunicorn -b :$PORT main:app  # specify your main app file and Flask app name
 
 # Optional: App Engine environment variables
 env_variables:
-  API_KEY: "a5b7cace5dda387a0cc5fced958cbac6"
+  API_KEY: ""
 
 # Optional: instance class and scaling
 instance_class: F2  # F2 is the default
